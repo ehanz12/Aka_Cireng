@@ -193,6 +193,8 @@
         font-weight: 700;
         font-size: 18px;
         margin-bottom: 25px;
+
+        word-break: break-word; /* ⭐ penting */
       }
 
       /* tombol WA utama */
@@ -248,22 +250,61 @@
       }
 
       /* ===== RESPONSIVE ===== */
+      /* ===== RESPONSIVE CLEAN ===== */
       @media (max-width: 768px) {
+        /* navbar */
+        .logo {
+          width: 40px;
+          height: 40px;
+        }
+
+        .logo-wrap {
+          font-size: 14px;
+        }
+
         nav ul {
           display: none;
           flex-direction: column;
           background: var(--pink);
           position: absolute;
-          right: 0;
+          right: 10px;
           top: 70px;
           padding: 20px;
           border: 4px solid black;
+          border-radius: 6px;
+          gap: 15px;
+          width: 180px;
         }
+
         nav ul.show {
           display: flex;
         }
+
         .toggle {
           display: block;
+        }
+
+        /* hero */
+        .hero {
+          padding: 70px 15px;
+        }
+
+        .hero-box {
+          padding: 30px;
+        }
+
+        .hero h1 {
+          font-size: 26px;
+        }
+
+        /* section padding */
+        section {
+          padding: 60px 6%;
+        }
+
+        /* contact */
+        .contact-box {
+          padding: 35px 20px;
         }
       }
     </style>
@@ -273,10 +314,7 @@
     <!-- NAVBAR -->
     <nav>
       <div class="logo-wrap">
-        <img
-          src="aka.png"
-          class="logo"
-        />
+        <img src="aka.png" class="logo" />
         PT Aka Shiro Company
       </div>
 
@@ -332,29 +370,21 @@
       <h2 class="title">Produk Kami</h2>
       <div class="grid">
         <div class="card box">
-          <img
-            src="image.png"
-          />
+          <img src="image.png" />
           Cireng Kornet
         </div>
 
         <div class="card box">
-          <img
-            src="image4.jpeg"
-          />
+          <img src="image4.jpeg" />
           Cireng Ayam Pedas
         </div>
 
         <div class="card box">
-          <img
-            src="image2.jpeg"
-          />
+          <img src="image2.jpeg" />
           Cireng Keju
         </div>
         <div class="card box">
-          <img
-            src="image3.jpeg"
-          />
+          <img src="image3.jpeg" />
           Cireng Bakso
         </div>
       </div>
@@ -364,15 +394,39 @@
     <section id="tim">
       <h2 class="title">Tim Kami</h2>
       <div class="grid">
-        <div class="card box">- Ahmad Zidan - <br>CEO</div>
-        <div class="card box">- M. Varelian Athaya - <br> Direktur Keuangan</div>
-        <div class="card box">- Farhan Aditya - <br> Manager Kreatif</div>
-        <div class="card box">- M. Fico Keandre - <br> Manager Kreatif</div>
-        <div class="card box">- Alif Ferdiansyah Saputra - <br> Direktur Produksi</div>
-        <div class="card box">- Rafael Alfatih Supyan - <br> Manager Produksi</div>
-        <div class="card box">- Reihan Aditya Putra - <br> Manager Produksi</div>
-        <div class="card box">- Hans M. Sayid Assabiq - <br> Manager Pemasaran</div>
-        <div class="card box">-  Reihan Ramadan - <br> Manager Bahan Baku</div>
+        <div class="card box">- Ahmad Zidan - <br />CEO</div>
+        <div class="card box">
+          - M. Varelian Athaya - <br />
+          Direktur Keuangan
+        </div>
+        <div class="card box">
+          - Farhan Aditya - <br />
+          Manager Kreatif
+        </div>
+        <div class="card box">
+          - M. Fico Keandre - <br />
+          Manager Kreatif
+        </div>
+        <div class="card box">
+          - Alif Ferdiansyah Saputra - <br />
+          Direktur Produksi
+        </div>
+        <div class="card box">
+          - Rafael Alfatih Supyan - <br />
+          Manager Produksi
+        </div>
+        <div class="card box">
+          - Reihan Aditya Putra - <br />
+          Manager Produksi
+        </div>
+        <div class="card box">
+          - Hans M. Sayid Assabiq - <br />
+          Manager Pemasaran
+        </div>
+        <div class="card box">
+          - Reihan Ramadan - <br />
+          Manager Bahan Baku
+        </div>
       </div>
     </section>
 
@@ -381,7 +435,7 @@
       <div class="contact-box box">
         <!-- Info -->
         <div class="contact-info">
-          <p>📧 cireng@email.com</p>
+          <p>📧 akashirocomany@gmail.com</p>
         </div>
 
         <!-- Tombol WhatsApp (utama) -->
@@ -395,10 +449,19 @@
 
         <!-- Sosial Media -->
         <div class="socials">
-          <a href="https://www.instagram.com/aka_shiro_company?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="soc ig">IG</a>
-          <a href="https://tiktok.com" target="_blank" class="soc tk">TikTok</a>
-          <a href="https://facebook.com" target="_blank" class="soc fb">FB</a>
-          <a href="mailto:cireng@email.com" class="soc em">Email</a>
+          <a
+            href="https://www.instagram.com/aka_shiro_company?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            class="soc ig"
+            >IG</a
+          >
+          <a
+            href="https://www.tiktok.com/@guntur_ganteng"
+            target="_blank"
+            class="soc tk"
+            >TikTok</a
+          >
+          <a href="mailto:akashirocomany@gmail.com" class="soc em">Email</a>
         </div>
       </div>
     </section>
